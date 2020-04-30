@@ -28,6 +28,7 @@
         <e p="SET_project.csproj" t="IncludeRecursive" />
         <e p="Tests" t="Include">
           <e p="BaseTest.cs" t="Include" />
+          <e p="SearchTest.cs" t="Include" />
         </e>
       </e>
       <e p="SET_project.sln" t="IncludeFlat" />
