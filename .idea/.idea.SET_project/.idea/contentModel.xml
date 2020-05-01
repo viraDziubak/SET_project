@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\HOME\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\HOME\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SET_project.1950842902.00" t="ExcludeRecursive" />
-    <e p="D:\SET\SET_project\SET_project" t="IncludeFlat">
+    <e p="C:\Users\Darvin\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Darvin\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_SET_project.957880811.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Darvin\RiderProjects\SET_project" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive">
         <e p="NUnit3TestAdapter.3.17.0-beta.1\build\net35\nunit.engine.api.dll" t="Include" />
         <e p="NUnit3TestAdapter.3.17.0-beta.1\build\net35\nunit.engine.dll" t="Include" />
@@ -28,6 +28,7 @@
         <e p="SET_project.csproj" t="IncludeRecursive" />
         <e p="Tests" t="Include">
           <e p="BaseTest.cs" t="Include" />
+          <e p="TestT.cs" t="Include" />
         </e>
       </e>
       <e p="SET_project.sln" t="IncludeFlat" />
