@@ -53,10 +53,12 @@
         <Compile Include="Frameworks\Settings.cs" />
         <Compile Include="Frameworks\Wait.cs" />
         <Compile Include="PageObject\MainPageAddClothes.cs" />
+        <Compile Include="PageObject\MainPageSub.cs" />
         <Compile Include="PageObject\PageObjectBase.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Tests\AddingClothes.cs" />
         <Compile Include="Tests\BaseTest.cs" />
+        <Compile Include="Tests\SubscribeTest.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

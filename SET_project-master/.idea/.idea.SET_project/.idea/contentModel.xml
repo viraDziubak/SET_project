@@ -21,6 +21,7 @@
         <e p="packages.config" t="Include" />
         <e p="PageObject" t="Include">
           <e p="MainPageAddClothes.cs" t="Include" />
+          <e p="MainPageSub.cs" t="Include" />
           <e p="PageObjectBase.cs" t="Include" />
         </e>
         <e p="Properties" t="Include">
@@ -30,6 +31,7 @@
         <e p="Tests" t="Include">
           <e p="AddingClothes.cs" t="Include" />
           <e p="BaseTest.cs" t="Include" />
+          <e p="SubscribeTest.cs" t="Include" />
         </e>
       </e>
       <e p="SET_project.sln" t="IncludeFlat" />
