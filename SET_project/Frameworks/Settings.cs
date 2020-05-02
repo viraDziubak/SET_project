@@ -9,7 +9,7 @@ namespace SET_project.Frameworks
         public static readonly Drivers Driver = (Drivers) Enum.Parse(typeof(Drivers),TestContext.Parameters["Driver"] ?? "Chrome");
 
         public static readonly TimeSpan ImplicitWait = TimeSpan
-            .FromMilliseconds(Convert.ToInt32(TestContext.Parameters["WaitTime"]??"5000"));
+            .FromMilliseconds(Convert.ToInt32(TestContext.Parameters["WaitTime"]??"10000"));
 
     }
 }
