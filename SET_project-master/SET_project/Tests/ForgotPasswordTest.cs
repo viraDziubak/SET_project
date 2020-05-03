@@ -12,11 +12,11 @@ namespace SET_project.Tests
 
         [TestCase(true, "test@gmail.com")]
         [TestCase(false, "testmail")]
-        public void Test2(string email)
+        public void Test2(bool isPositive, string email)
         {
             bool isEmailOk = _mainPageTwo.ClickToSignIn().ClickForgotButton().EnterMail(email).IsMailOk();
-            Assert.That(isEmailOk, Is.EqualTo(null), $"Email was validated {(isEmailOk ? "successfully" : "unsuccessfully")}"
-                                                     + " but were expected opposite");
+            Assert.That(isEmailOk, Is.EqualTo(isPositive), $"Email was validated {(isEmailOk ? "successfully" : "unsuccessfully")}"
+                                                           + " but were expected opposite");
         }
     }
 }
