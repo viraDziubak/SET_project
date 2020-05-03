@@ -55,10 +55,12 @@
         <Compile Include="PageObject\MainPageLang.cs" />
         <Compile Include="PageObject\MainPageSearch.cs" />
         <Compile Include="PageObject\PageObjectBase.cs" />
+        <Compile Include="PageObject\SignInPage.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Tests\BaseTest.cs" />
         <Compile Include="Tests\ChangeLangTest.cs" />
         <Compile Include="Tests\SearchTest.cs" />
+        <Compile Include="Tests\SignInTest.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

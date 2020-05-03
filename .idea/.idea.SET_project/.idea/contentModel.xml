@@ -23,6 +23,7 @@
           <e p="MainPageLang.cs" t="Include" />
           <e p="MainPageSearch.cs" t="Include" />
           <e p="PageObjectBase.cs" t="Include" />
+          <e p="SignInPage.cs" t="Include" />
         </e>
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
@@ -32,6 +33,7 @@
           <e p="BaseTest.cs" t="Include" />
           <e p="ChangeLangTest.cs" t="Include" />
           <e p="SearchTest.cs" t="Include" />
+          <e p="SignInTest.cs" t="Include" />
         </e>
       </e>
       <e p="SET_project.sln" t="IncludeFlat" />
