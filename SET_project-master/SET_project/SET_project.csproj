@@ -54,10 +54,12 @@
         <Compile Include="Frameworks\Wait.cs" />
         <Compile Include="PageObject\MainPageAddClothes.cs" />
         <Compile Include="PageObject\MainPage.cs" />
+        <Compile Include="PageObject\MainPageForFilters.cs" />
         <Compile Include="PageObject\PageObjectBase.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Tests\AddingClothes.cs" />
         <Compile Include="Tests\BaseTest.cs" />
+        <Compile Include="Tests\FilterTest.cs" />
         <Compile Include="Tests\ForgotPasswordTest.cs" />
     </ItemGroup>
     <ItemGroup>
