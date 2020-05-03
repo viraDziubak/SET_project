@@ -12,20 +12,20 @@ namespace SET_project.PageObject
         {
         }
 
-        private static readonly By SingInButon = By.XPath("//*[@id='_desktop_user_info']/div/a/span");
+        private static readonly By SingInButton = By.XPath("//*[@id='_desktop_user_info']/div/a/span");
         private static readonly By EmailField = By.XPath("//*[@id='login-form']/section/div[1]/div[1]/input");
         private static readonly By PasswordField = By.XPath("//*[@id='login-form']/section/div[2]/div[1]/div/input");
         private static readonly By SuccessSignInClass = By.XPath("//*[@id='_desktop_user_info']/div/a[2]");
-        private static readonly By SingOutButon = By.XPath("//*[@id='_desktop_user_info']/div/a[1]");
+        private static readonly By SingOutButton = By.XPath("//*[@id='_desktop_user_info']/div/a[1]");
         public SignInPage ClickToSignIn()
         {
-            Driver.FindElement(SingInButon).Click();
+            Driver.FindElement(SingInButton).Click();
             return this;
         }
         
         public SignInPage ClickToSignOut()
         {
-            Driver.FindElement(SingOutButon).Click();
+            Driver.FindElement(SingOutButton).Click();
             return this;
         }
 
