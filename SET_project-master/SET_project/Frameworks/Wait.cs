@@ -5,7 +5,7 @@ namespace SET_project.Frameworks
 {
     public class Wait
     {
-        public static bool WaitFor(Func<bool> func, int millisecondsTimeout = 250, int waitInterval = 50)
+        public static bool WaitFor(Func<bool> func, int millisecondsTimeout = 3000, int waitInterval = 100)
         {
             DateTime start = DateTime.Now;
             do

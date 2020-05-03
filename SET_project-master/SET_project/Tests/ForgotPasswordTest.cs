@@ -10,8 +10,8 @@ namespace SET_project.Tests
         [OneTimeSetUp]
         public void OneTimeSetUp() => _mainPageTwo = new MainPage(Driver);
 
-        [TestCase(true, "test@gmail.com")]
-        [TestCase(false, "testmail")]
+        [TestCase(false, "test@gmail.com")]
+        [TestCase(true, "testmail")]
         public void Test2(bool isPositive, string email)
         {
             bool isEmailOk = _mainPageTwo.ClickToSignIn().ClickForgotButton().EnterMail(email).IsMailOk();

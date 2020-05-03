@@ -12,8 +12,7 @@ namespace SET_project.Tests
         [TestCase()]
         public void Test3()
         {
-            bool end2 = _mainPageThree.ClickToAllProduct().ClickFirstFilter().ClickSecondFilter().ClickThirdFilter()
-                .IsFilterEmpty();
+            bool end2 = _mainPageThree.ClickToAllProduct().ClickFirstFilter().IsFilterEmpty();
 
         }
     }

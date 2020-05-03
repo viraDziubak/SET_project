@@ -10,15 +10,12 @@ namespace SET_project.PageObject
         public MainPageForFilters(IWebDriver driver) : base(driver)
         {
         }
-
         private static readonly By AllProductsButton = By.XPath("//*[@id='content']/section/a");
-        private static readonly By FilterFirstBrand = By.XPath("//*[@id='facet_17738']/li[2]/label/a");
-        private static readonly By FilterSecondColor = By.XPath("//*[@id='facet_95373']/li[1]/label/a");
-        private static readonly By FilterThirdSize = By.XPath("//*[@id='facet_17597']/li[2]/label/a");
+        private static readonly By FilterFirstBrand = By.XPath("/html/body/main/section/div/div[1]/div[2]/div[2]/section[6]/ul/li[2]/label/a");
         private static readonly By DeleteFiltersButton = By.XPath("//*[@id='_desktop_search_filters_clear_all']/button");
-        private static readonly By GoHome = By.XPath("//*[@id='_desktop_logo']/a/img");
         private static readonly By Trouble = By.Name("s");
         public string troubleText = "Huston! We have troubles!";
+        public string OkText = "Its Ok";
         public MainPageForFilters ClickToAllProduct()
         {
             Driver.FindElement(AllProductsButton).Click();
@@ -30,16 +27,7 @@ namespace SET_project.PageObject
             Driver.FindElement(FilterFirstBrand).Click();
             return this;
         }
-        public MainPageForFilters ClickSecondFilter()
-        {
-            Driver.FindElement(FilterSecondColor).Click();
-            return this;
-        }
-        public MainPageForFilters ClickThirdFilter()
-        {
-            Driver.FindElement(FilterThirdSize).Click();
-            return this;
-        }
+
 
         public MainPageForFilters DeleteFilters()
         {
@@ -53,7 +41,9 @@ namespace SET_project.PageObject
             bool isFilterOk = Wait.WaitFor(() => Driver.FindElements(FilterFirstBrand).Any());
             if (isFilterOk == true)
             {
-                Driver.FindElement(GoHome).Click();
+                Driver.FindElement(Trouble).Clear();
+                Driver.FindElement(Trouble).SendKeys(OkText);
+                Driver.FindElement(Trouble).SendKeys(Keys.Enter);
             }
             else
             {
@@ -65,9 +55,5 @@ namespace SET_project.PageObject
 
             return isFilterOk;
         }
-
-
-        
-        
     }
 }
